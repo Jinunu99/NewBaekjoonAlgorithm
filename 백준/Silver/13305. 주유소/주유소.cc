@@ -11,29 +11,29 @@ int main(void)
 	cin.tie(NULL);
 	cout.tie(NULL);
 
-	vector<int> distance;
-	vector<int> liter;
+	vector<long long> distance;
+	vector<long long> liter;
 
 	int n;
 	cin >> n;
 
 	for (int i = 0; i < n - 1; i++)
 	{
-		int ipt;
+		long long ipt;
 		cin >> ipt;
 
 		distance.push_back(ipt);
 	}
 	for (int i = 0; i < n; i++)
 	{
-		int ipt;
+		long long ipt;
 		cin >> ipt;
 
 		liter.push_back(ipt);
 	}
 
-	int min = liter[0];
-	int sum = 0;
+	long long min = liter[0];
+	long long sum = 0;
 
 	for (int i = 0; i < n - 1; i++)
 	{
